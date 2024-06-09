@@ -59,6 +59,11 @@ body {
     font-weight: 600;
     color: var(--blue-color);
     border-bottom: 1px solid var(--blue-color);
+    transition: color .3s ease-in-out;
+}
+
+.header-top__link:hover {
+    color: #173cc0;
 }
 
 .header-bottom {
@@ -85,17 +90,19 @@ body {
 }
 
 .header-bottom__phone {
-    font-size: 16px;
-    color: var(--blue-color);
-}
-
-.header-bottom__phone {
     background-image: url("../img/header/phone.svg");
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 21px;
     display: flex;
     align-items: center;
+    font-size: 16px;
+    color: var(--blue-color);
+    transition: color .3s ease-in-out;
+}
+
+.header-bottom__phone:hover {
+    color: #173cc0;
 }
 
 /* Hero */
@@ -210,6 +217,11 @@ body {
     color: var(--blue-color);
     font-size: 20px;
     font-weight: 400;
+    transition: color .3s ease-in-out;
+}
+
+.products__link:hover {
+    color: #173cc0;
 }
 
 /* News */
@@ -219,23 +231,14 @@ body {
 } 
 
 .news__item {
-    width: 100%;
-    max-width: 380px;
+    flex-basis: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .news__item .card {
     height: 100%;
-} 
-
-.news__bottom {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    background-color: #F5F5F5;
 }
 
 .card-image {
@@ -249,8 +252,17 @@ body {
 }
 
 .card__content {
+    background-color: #F5F5F5;
     padding: 16px 16px 24px;
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.news__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
 }
 
 .news__text {
@@ -265,7 +277,12 @@ body {
     color: var(--blue-color);
     font-size: 16px;
     font-weight: 400;
-} 
+    transition: color .3s ease-in-out;
+}
+
+.news__link:hover {
+    color: #173cc0;
+}
 
 .news__date {
     font-size: 16px;
